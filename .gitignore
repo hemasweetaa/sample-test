@@ -1,0 +1,11 @@
+# Python/Backend
+/backend/venv/
+/backend/__pycache__/
+/backend/stock_predictor.h5
+*.pyc
+
+# Node/Frontend
+/frontend/node_modules/
+/frontend/build/
+.DS_Store
+npm-debug.log*

@@ -12,7 +12,7 @@ function App() {
 
     const handlePredict = async () => {
         if (!ticker) {
-            setError('Please enter a stock ticker.');
+            setError('ENTER');
             return;
         }
         setLoading(true);
@@ -39,7 +39,7 @@ function App() {
                     type="text"
                     value={ticker}
                     onChange={(e) => setTicker(e.target.value.toUpperCase())}
-                    placeholder="Enter Stock Ticker (e.g., AAPL)"
+                    placeholder="Enter (e.g., AAPL)"
                 />
                 <button onClick={handlePredict} disabled={loading}>
                     {loading ? 'Predicting...' : 'Predict'}
